@@ -40,15 +40,16 @@
 
 	<div class="row">
 		<div class="col-md-8">
-			<h2>Welcome to LinuxWorld, India , in fully automated jenkins</h2>
-			<h3>Contact training@lwindia.com or mob 9351009002</h3>
+			<h2>Welcome to Sahaja Yoga Mediataion </h2>
+			<h3>Self Realisation And Kundalini Awakening, Experience Now</h3>
+			<h4>https://www.sahajayoga.org.in/</h4>
 		</div>	
 	</div>
 
 
 	<hr>
 	<footer>
-		<p>&copy; LW 2022</p>
+		<p>&copy;@sahajayog/</p>
 	</footer>
 </div>
 
