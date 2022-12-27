@@ -39,8 +39,8 @@
 <div class="container">
 
 	<div class="row">
-		<div class="col-md-8">
-			<h2>Welcome to Sahaja Yoga Mediataion </h2>
+		<div class="col-md-8"> 
+			<h2>Sahaja Yoga Mediataion Most Welcom </h2>
 			<h3>Self Realisation And Kundalini Awakening, Experience Now</h3>
 			<h4>https://www.sahajayoga.org.in/</h4>
 		</div>	
