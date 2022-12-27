@@ -1,26 +1,64 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>Sahaja Yoga</title>
-<style>
-h1{text-align: center;}
-h2 {text-align: center;}
-</style>
+
+<spring:url value="/resources/core/css/hello.css" var="coreCss" />
+<spring:url value="/resources/core/css/bootstrap.min.css" var="bootstrapCss" />
+<link href="${bootstrapCss}" rel="stylesheet" />
+<link href="${coreCss}" rel="stylesheet" />
 </head>
-<body>
- 
-<h1>Sahaja Yoga</h1>
-<h2>Experience Sahaja Yoga Meditation</h2>
-<p>The time has come for all of you to get your self-realisation, by which your attention becomes enlightened, your health gets completely all right, your mental processes are sensible, but above all you stand in your present.
-- H.H. Shri Mataji Nirmala Devi, 29.09.1994, Los Angeles, USA</p>
 
-<img align="middle" src="https://www.sahajayoga.org.in/new_images/anim_kundalini.gif" alt="Paris" class="center">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">Sahaja Yoga</a>
+		</div>
+	</div>
+</nav>
 
-<p>“Sahaja” in Sanskrit means "spontaneous" and also "born with", "Yoga” means "union with God". The potential of spiritual awakening and ascent is within every human being in the form of Kundalini. The Kundalini can be awakened through a unique living process of Sahaja Yoga called Self Realisation.</p>
-<h1>You Can Not Pay For Your Self-Realisation</h1>
-<p>"So one should understand that you are not to pay for this. You are not to pay for what I say to you, or for my lectures, or anything, or for your Realisation, not at all, not a single pie for that. You cannot pay for it. It is so invaluable. ... It is absolutely overflowing. It's absolutely freely coming to you. So you cannot pay for your Self-Realisation. It's Love, and Love, you cannot purchase."
-- H.H. Shri Mataji Nirmala Devi, London, 1982 </p>
+<div class="jumbotron">
+	<div class="container">
+		<h1>Sahaja Yoga</h1>
+		<p>
+			<c:if test="${not empty msg}">
+				Hello ${msg}
+			</c:if>
 
+			<c:if test="${empty msg}">
+				Welcome Welcome!
+			</c:if>
+		<p>
+			<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+		</p>
+	</div>
+</div>
+
+<div class="container">
+
+	<div class="row">
+		<div class="col-md-8">
+			<h2>Welcome to Sahaja Yoga Mediataion </h2>
+			<h3>Self Realisation And Kundalini Awakening, Experience Now</h3>
+			<h4>https://www.sahajayoga.org.in/</h4>
+		</div>	
+	</div>
+
+
+	<hr>
+	<footer>
+		<p>&copy;@sahajayog/</p>
+	</footer>
+</div>
+
+<spring:url value="/resources/core/css/hello.js" var="coreJs" />
+<spring:url value="/resources/core/css/bootstrap.min.js" var="bootstrapJs" />
+
+<script src="${coreJs}"></script>
+<script src="${bootstrapJs}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 </body>
 </html>
